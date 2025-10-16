@@ -73,3 +73,9 @@ Wir verwenden `mypy` zur statischen Typprüfung.
 ## 🤖 AI Pair Programming
 
 Dieses Projekt ist für die Zusammenarbeit mit einem KI-Pair-Programmer (wie Gemini) im TDD-Modus optimiert. Die genauen Verhaltensregeln, Antwortformate und Ziele sind in der `agents.md`-Datei in diesem Verzeichnis definiert.
+
+## 💡 Danksagung (Acknowledgements)
+
+Der TDD-Workflow und die Nutzung einer `agents.md` zur Steuerung des KI-Pair-Programmers sind stark inspiriert von den Konzepten und der `CLAUDE.md` von [Harper Reed](https://github.com/harperreed).
+
+* **Harper Reed's Dotfiles:** [github.com/harperreed/dotfiles](https://github.com/harperreed/dotfiles)
