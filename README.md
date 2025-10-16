@@ -23,7 +23,7 @@ Dieses Projekt verwendet Python und wird mit `pip` und einem virtuellen Environm
 
 1.  **Erstelle ein virtuelles Environment:**
     ```bash
-    python -m venv .venv
+    python3 -m venv .venv
     ```
 
 2.  **Aktiviere das Environment:**
@@ -39,7 +39,7 @@ Dieses Projekt verwendet Python und wird mit `pip` und einem virtuellen Environm
 3.  **Installiere die Abhängigkeiten:**
     Dieses Projekt nutzt die `pyproject.toml`. Installiere das Projekt im "editable" Modus (`-e .`) zusammen mit allen Entwicklungs-Abhängigkeiten (`[dev]`):
     ```bash
-    pip install -e .[dev]
+    pip install -e ".[dev]"
     ```
 
 ---
