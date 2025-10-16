@@ -2,7 +2,19 @@
 
 > Ein kurzer Satz, der beschreibt, was dieses Projekt tut.
 
-(dies ist ein Template für ein Verzeichnis fürs Vibe-Coden, das dann gepullt wird als Ausgangsbasis für deine eigenen Projekte)
+## Dies ist ein Template-Repository.
+
+> **Benutze es NICHT direkt!**
+
+**🚀 So startest du dein eigenes Projekt damit**:
+
+1.  Klicke auf den grünen Button **"Use this template"** oben rechts.
+2.  Wähle **"Create a new repository"**.
+3.  Gib deinem neuen Projekt einen Namen und erstelle es.
+4.  **Klone dein neues Repository** (nicht dieses hier!) auf deinen lokalen Rechner.
+
+Dies ist ein Template für ein Verzeichnis fürs Vibe-Coden, das dann gepullt wird als Ausgangsbasis für deine eigenen Projekte.
+
 ---
 
 ## 🚀 Setup & Installation
