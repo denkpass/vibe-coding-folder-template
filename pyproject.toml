@@ -1,0 +1,41 @@
+[project]
+name = "mein-projekt"
+version = "0.1.0"
+description = "Eine kurze Beschreibung meines neuen Projekts."
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov", # Misst die Testabdeckung
+    "ruff",       # Linter und Formatter
+    "mypy"        # Statische Typ-Prüfung
+]
+
+# -------------------------------------------------------------------
+# TOOL-KONFIGURATIONEN
+# -------------------------------------------------------------------
+
+[tool.pytest.ini_options]
+# Fügt 'src' zum Python-Pfad hinzu, damit Tests 'src' importieren können
+pythonpath = ["src"]
+# Standard-Optionen, die immer ausgeführt werden sollen
+# --cov=src: Messe die Abdeckung für den 'src' Ordner
+# --cov-report=term-missing: Zeige an, welche Zeilen nicht getestet wurden
+# -ra: Zeige einen detaillierten Report für alle Tests außer denen, die bestanden wurden
+addopts = "--cov=src --cov-report=term-missing -ra"
+
+[tool.ruff]
+# Setzt die maximale Zeilenlänge (passend zum 'black'-Standard)
+line-length = 88
+
+[tool.ruff.lint]
+# Wähle Regel-Sets aus: E=pycodestyle errors, F=pyflakes, W=pycodestyle warnings, I=isort
+select = ["E", "F", "W", "I"]
+
+[tool.mypy]
+# Sagt mypy, wo es nach Code suchen soll
+files = ["src", "tests"]
+# Erzwingt, dass jede Funktion Typ-Annotationen haben muss
+disallow_untyped_defs = true
